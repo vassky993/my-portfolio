@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .logo span {
+      color: orange;
+    }
+
+    h2 {
+      color: orange;
+      margin-top: 30px;
+    }
+
+    .contact-info {
+      margin: 20px;
+      font-size: 16px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    .contact-info b {
+      color: black;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: pink;
+      color: black;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: darkorange;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo"><span>P</span>ortfolio</div>
+  </nav>
+
+  <h2>Contact Me</h2>
+
+  <div class="contact-info">
+    <p>Looking forward to hearing from you.</p>
+    <p><b>Phone:</b> +91-9059425699</p>
+    <p><b>Email:</b> yerubandi.srisaikarthikeya@gmail.com</p>
+  </div>
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+    <label for="bio">Bio (max 200 words):</label>
+    <textarea id="bio" name="bio" rows="5" maxlength="400" placeholder="Write about yourself..." required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
