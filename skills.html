@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Skills</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff;
+        }
 
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-      border-bottom: 1px solid #ccc;
-    }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
 
-    .logo {
-      font-weight: bold;
-      font-size: 24px;
-    }
+        .skills-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-    .logo span {
-      color: orange;
-    }
+        .s1,
+        .s2,
+        .s3 {
+            background-color: #f7f7f7;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            padding: 20px 30px;
+            width: 300px;
+        }
 
-    h2 {
-      color: orange;
-      margin-top: 30px;
-    }
+        h4 {
+            margin: 0;
+            color: #ff6b3f;
+            font-size: 20px;
+        }
 
-    .skills-section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
+        .skill-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 10px;
+        }
 
-    .card {
-      width: 280px;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      background: white;
-      text-align: center;
-    }
+        .skill-list li {
+            padding: 8px 0;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+        }
 
-    .card h3 {
-      margin-bottom: 10px;
-      color: #333;
-    }
+        .skill-list li:last-child {
+            border-bottom: none;
+        }
 
-    .card p {
-      margin: 5px 0;
-    }
-  </style>
+        /* Responsive for small screens */
+        @media screen and (max-width: 768px) {
+            .skills-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .s1,
+            .s2,
+            .s3 {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-
-  <nav>
-    <div class="logo"><span>P</span>ortfolio</div>
-  </nav>
-
-  <h2>Skills</h2>
-
-  <div class="skills-section">
-    <div class="card">
-      <h3>Programming</h3>
-      <p>Python</p>
-      <p>Java</p>
-      <p>C (Basics)</p>
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="s1">
+            <h4>Programming</h4><br>
+            <ul class="skill-list">
+                <li>Python</li>
+                <li>Java</li>
+                <li>C</li>
+            </ul>
+        </div>
+        <div class="s2">
+            <h4>Web Development</h4><br>
+            <ul class="skill-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div class="s3">
+            <h4>Tools & Technologies</h4><br>
+            <ul class="skill-list">
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+            </ul>
+        </div>
     </div>
-
-    <div class="card">
-      <h3>Web Development</h3>
-      <p>HTML</p>
-      <p>CSS</p>
-      <p>JavaScript</p>
-    </div>
-
-    <div class="card">
-      <h3>Tools & Technologies</h3>
-      <p>Git & GitHub</p>
-      <p>VS Code</p>
-    </div>
-  </div>
-
 </body>
+
 </html>
